@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# Gift Card App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple React app that allows users to upload an image, add custom text for a gift card, and then download the gift card as an image. The app uses `react-dropzone` for handling file uploads and `html2canvas` for capturing and downloading the gift card as an image.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Upload an image.
+- Add a custom message, recipient's name, and sender's name.
+- Preview the uploaded image with the added text.
+- Download the created gift card as an image.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React**: For building the user interface.
+- **react-dropzone**: For handling file uploads.
+- **html2canvas**: For capturing and downloading the gift card as an image.
+- **react-icons**: For cloud upload icon.
+- **FileSaver**: For downloading the image as a PNG file.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ensure that you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your system.
 
-### `npm run build`
+### Steps to Run the App Locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
+   git clone https://github.com/AndreRidho/gift-card-app.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies**
 
-### `npm run eject`
+Navigate to the project folder and install the dependencies.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  ```
+  cd gift-card-image-generator
+  npm install
+  ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To run the app locally, start the development server.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npm start
+```
+The app will be available at http://localhost:3000.
